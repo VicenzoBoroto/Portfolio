@@ -1,0 +1,459 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    background-color: #212121;
+    font-family: 'Barlow', sans-serif;
+}
+
+.detalhe {
+    background-color: #FBC91E;
+    height: 187px;
+    position: relative;
+}
+
+.nome {
+    display: grid;
+    background-color: #ffff;
+    justify-items: center;
+    gap: 8px;
+    padding: 25px 95px;
+    margin-top: -149px;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+}
+
+.nome h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+}
+
+.nome h2 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+
+.nome2 {
+    display: grid;
+    background-color: #ffff;
+    justify-items: center;
+    align-content: center;
+    text-decoration: underline;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    margin-top: 80px;
+    padding: 19px 0px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background-color: #18161E;
+}
+
+ul a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffff;
+    padding: 0px 80px;
+}
+
+.separator {
+    width: 90px;
+    height: 2px;
+    background: #ffff;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 120px 86px;
+}
+
+.texto {
+    display: grid;
+    gap: 50px;
+    padding:30px 0px 10px 150px;
+    color: #ffff;
+}
+
+.texto p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+}
+
+.local {
+    font-weight: 400;
+    font-size: 0.5rem;
+    letter-spacing: 1.5px;
+    color: #C7C7C7;
+}
+
+.habilidades {
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 115px;
+    margin-top: 180px;
+}
+
+.habilidades h1 {
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 9rem;
+    letter-spacing: 0.5rem;
+    color: #808080;
+    transform: rotate(-90deg);
+}
+
+.habilidades :nth-child(1) {
+    top: 1090px;
+    left: -25px;
+}
+
+.habilidades :nth-child(2) {
+    top: 1670px;
+    left: 0px;
+}
+
+.habilidades :nth-child(3) {
+    top: 1340px;
+    right: -40px;
+}
+
+.formacao {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 70px;
+    margin: 180px 230px;
+    color: #ffff;
+    line-height: 30px;
+}
+
+.formacao img {
+    position: absolute;
+    top: 2350px;
+    left: 170px;
+}
+
+.formacao h2 {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+}
+
+.graduacao, .curso, .tecnico {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+
+}
+
+.graduacao p, .curso p, .tecnico p {
+    grid-column: 1;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    color: #C7C7C7;
+}
+
+.graduacao :nth-child(4), .tecnico :nth-child(4), .curso :nth-child(4) {
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    color: #ffff;
+}
+
+.experiencias {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 80px;
+    margin: 180px 230px;
+    color: #ffff;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.experiencias img {
+    position: absolute;
+    top: 3160px;
+    right: 170px;
+}
+
+.experiencias h2 {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.exp1, .exp2, .exp3 {
+    display: grid;
+    grid-template-columns: 600px;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    justify-content: end;
+}
+
+.exp1 p, .exp2 p, .exp3 p {
+    grid-column: 1;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    color: #C7C7C7;
+}
+
+.exp1 :nth-child(4), .exp3 :nth-child(4), .exp2 :nth-child(4) {
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    color: #ffff;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #18161E;
+    padding: 40px 100px;
+    height: 300px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    color: #ffff;
+}
+
+.contatos {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+}
+
+.contatos :nth-child(5) {
+    grid-row: 6;
+    
+}
+
+.contatos a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.localizacao {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    justify-content: end;
+}
+
+.localizacao :nth-child(3) {
+    grid-row: 6;
+}
+
+@media (max-width: 1400px) {
+    .formacao img {
+        display: none
+    }
+    .experiencias img {
+        display: none
+    }
+}
+
+@media (max-width: 1220px) {
+    .nome h1 {
+        font-size: 2.5rem;
+    }
+    .nome {
+        padding-bottom: 50px;
+    }
+
+    .nome h2 {
+        text-align: center;
+    }
+
+    .habilidades h1 {
+        font-size: 7rem;
+    }
+
+    .exp1, .exp2, .exp3 {
+        justify-content: left;
+    }
+}
+
+@media (max-width: 1100px) {
+    .habilidades h1 {
+        display: none;
+    }
+    .nome h1 {
+        font-size: 2rem;
+    }
+    .sobre {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .texto {
+       padding: 30px 60px; 
+       justify-items: center;
+       text-align: center;
+    }
+    .habilidades {
+        margin-top: 100px;
+    }
+    .separator {
+        display: none
+    }
+    ul a {
+        padding: 0px
+    }
+    .exp1, .exp2, .exp3 {
+        grid-template-columns:none;
+}
+
+@media (max-width: 950px) {
+    .nome h1{
+        font-size: 1.5rem;
+    }
+    .nome h2{
+        font-size: 0.8rem;
+    }
+    .nome {
+        padding: 25px 40px;
+        margin-top: -95px;
+    }
+    .nome2 h3{
+        font-size: 1rem;
+    }
+    .sobre img{
+        width: 300px;
+    }
+    .texto p{
+        font-size: 1.2rem;
+    }
+    .texto img{
+        width: 200px
+    }
+    .habilidades img{
+        width: 350px
+    }
+    .graduacao, .curso, .tecnico{
+        grid-template-columns: 4fr 1fr;
+    }
+    .formacao {
+        margin: 140px 160px;   
+    }
+    .experiencias {
+        margin: 140px 160px;   
+    }
+}
+
+@media (max-width: 760px){
+    .nome{
+        padding: 25px 30px;
+    }
+    .nome h1{
+        font-size: 1rem;
+    }
+    .formacao {
+        margin: 120px 100px;
+    }
+    .experiencias {
+        margin: 120px 100px;
+    }
+    .texto{
+        padding: 30px 0px;
+    }
+    footer {
+        padding: 40px 30px;
+    }
+    .nome {
+        left: 15%;
+        right: 15%;
+    }
+    .nome2 {
+        left: 15%;
+        right: 15%;
+    }
+}
+
+@media (max-width: 500px) {
+    .formacao {
+        margin: 80px 60px;
+        gap: 40px;
+    }
+    .formacao p {
+        font-size: 1rem;
+        grid-column: 1/3;
+    }
+    .formacao h2, .formacao h3 {
+        font-size: 1.2rem;
+    }
+    .experiencias {
+        margin: 80px 60px;
+        gap: 40px;
+    }
+    .experiencias p {
+        font-size: 1rem;
+    }
+    .experiencias h2, .experiencias h3 {
+        font-size: 1.2rem;
+    }
+    footer {
+        padding: 20px 10px;
+        font-size: 0.7rem;
+    }
+    .sobre img{
+        width: 250px;
+    }
+    .sobre {
+        margin: 120px 60px;
+    }
+    .habilidades{
+        margin-top: 0px;
+    }
+    .habilidades img {
+        width: 290px;
+    }
+    .texto img {
+        width: 200px;
+    }
+    ul a {
+        font-size: 0.8rem;
+    }
+    .sobre p {
+        font-size: 1rem;
+    }
+}
