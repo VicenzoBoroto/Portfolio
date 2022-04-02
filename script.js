@@ -1,16 +1,23 @@
 const menuItems = document.querySelectorAll('.menu a');
 
 menuItems.forEach(item => {
-    item.addEventListener('click', scrollToId);
+    item.addEventListener('click', scrollToPositionOnClick);
 })
 
-function scrollToId(event) {
-    event.preventDefault(); 
-    const element = event.target;
+function getPositionByHref(element) {
     const id = element.getAttribute('href');
-    const section = document.querySelector(id).offsetTop;
+    return document.querySelector(id).offsetTop;
+}
+
+function scrollToPositionOnClick(event) {
+    event.preventDefault(); 
+    const section = getPositionByHref(event.target) - 60;
+    scrollToPosition(section)
+}
+
+function scrollToPosition(section) {
     window.scroll({
-        top: section - 60,
+        top: section,
         behavior: "smooth",
     });
 }
