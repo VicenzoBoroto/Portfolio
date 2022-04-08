@@ -1,3 +1,5 @@
+//Smooth Scroll para links internos//
+
 const menuItems = document.querySelectorAll('.menu a');
 
 menuItems.forEach(item => {
@@ -20,4 +22,26 @@ function scrollToPosition(section) {
         top: section,
         behavior: "smooth",
     });
+}
+
+//Animação de surgir ao scrollar a página//
+
+const target = document.querySelectorAll("[data-anime]");
+const animeClass = "animate";
+
+function animeScroll() {
+    const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
+    target.forEach(function(element) {
+        if(windowTop > element.offsetTop){
+            element.classList.add(animeClass);
+        }else{
+            element.classList.remove(animeClass);
+        }
+    })
+}
+
+if(target.length){
+    window.addEventListener("scroll", function(){
+        animeScroll();
+    })
 }
